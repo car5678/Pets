@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             x:Class="Pets.Registro">
+
+    <Grid BackgroundColor="White" Margin="20">
+
+        <Grid.RowDefinitions>
+            
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            
+        </Grid.RowDefinitions>
+
+        <Grid VerticalOptions="Center" Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <forms:AnimationView x:Name="animacion" Grid.Row="0"
+                                 Animation="dog.json" HeightRequest="250"
+                                 WidthRequest="250" AutoPlay="True"
+                                 RepeatMode="Infinite"
+                                 VerticalOptions="Center" 
+            />
+            
+            <Label Grid.Row="1" Text="Registro"
+                   TextColor="#FF9800"
+                   HorizontalTextAlignment="Center"
+                   FontSize="30" FontAttributes="Bold"
+            />
+
+        </Grid>
+
+        <StackLayout Grid.Row="1">
+
+            <StackLayout Orientation="Horizontal">
+                <Entry Placeholder="Usuario" x:Name="lblUser" 
+                       PlaceholderColor="#F85F6A"
+                       TextColor="#black"
+                       FontAttributes="Bold" WidthRequest="300"
+                 />
+                
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Entry Placeholder="Cedula" x:Name="lblCl" 
+                       PlaceholderColor="#F85F6A"
+                       TextColor="#F85F6A"
+                       FontAttributes="Bold" WidthRequest="300"
+                 />
+
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">
+                <Entry Placeholder="Contrasena" x:Name="lblContrasena" 
+                       PlaceholderColor="#F85F6A"
+                       TextColor="#F85F6A"
+                       FontAttributes="Bold" WidthRequest="300"
+                 />
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Entry Placeholder="Repitir Contrasena" x:Name="lblREpContrasena" 
+                       PlaceholderColor="#F85F6A"
+                       TextColor="#F85F6A"
+                       FontAttributes="Bold" WidthRequest="300"
+                 />
+
+            </StackLayout>
+
+            <BoxView Grid.Row="1" BackgroundColor="Transparent"/>
+
+            <Button TextColor="White"
+                    BackgroundColor="#F85F6A"
+                    Text="Registro"
+                    FontAttributes="Bold"
+                    FontSize="16"                   
+                    CornerRadius="16"
+                    Clicked="btnRegistro_Clicked"
+               
+            />
+
+
+        </StackLayout>
+
+
+        <StackLayout  HorizontalOptions="Center" Grid.Row="2"
+                      Orientation="Horizontal"
+                      >
+
+            <Label Text="Universidad Israel"
+                   HorizontalTextAlignment="Center"
+                   TextColor="#1C2833"             
+                
+            />
+
+            <Label Text=" 9 Semestres"
+                   HorizontalTextAlignment="Center"
+                   TextColor="#F85F6A"            
+                
+            />
+
+        </StackLayout>
+
+
+
+    </Grid>
+</ContentPage>

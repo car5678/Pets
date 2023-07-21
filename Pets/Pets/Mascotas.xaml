@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pets.Mascotas">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="240"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+        <Image Source="https://i.ibb.co/yn16sWd/pngegg-2.png"/>
+
+        <StackLayout Grid.Row="1" Margin="20" Orientation="Vertical">
+
+
+            <Label Grid.Row="1" Text="Ingres los datos de la Mascota"
+                   TextColor="#FF9800"
+                   HorizontalTextAlignment="Center"
+                   FontSize="20" FontAttributes="Bold"/>
+
+            <Entry Placeholder="Nombres"
+                       x:Name="lblNombre"
+                       PlaceholderColor="#FF9800"
+                       TextColor="#FF9800"
+                       FontAttributes="Bold" WidthRequest="300"
+                 />
+
+            <Entry Placeholder="Especie"
+                       x:Name="lblEspecie"
+                       PlaceholderColor="#FF9800"
+                       TextColor="#FF9800"
+                       FontAttributes="Bold" WidthRequest="300"
+                 />
+
+            <Entry Placeholder="Edad"
+                       x:Name="lblEdad"
+                       PlaceholderColor="#FF9800"
+                       TextColor="#FF9800"
+                       FontAttributes="Bold" WidthRequest="300"
+                 />
+
+            
+            <Button TextColor="White"
+                    BackgroundColor="#FF9800"
+                    Text="Agregar Imagenes"
+                    FontAttributes="Bold"
+                    FontSize="16"                   
+                    CornerRadius="16"
+               
+            />
+
+            <Button TextColor="White"
+                    BackgroundColor="#FF9800"
+                    Text="Agregar Mascota"
+                    FontAttributes="Bold"
+                    FontSize="16"                   
+                    CornerRadius="16"
+               
+            />
+
+        </StackLayout>
+    </Grid>
+
+</ContentPage>

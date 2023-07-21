@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pets.Solicitud">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="240"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+        <Image Source="https://i.ibb.co/XbWq804/pngegg-3.png"/>
+
+        <StackLayout Grid.Row="1" Margin="20" Orientation="Vertical">
+
+
+            <Label Grid.Row="1" Text="Solicitud de Adopción"
+                   TextColor="#FF9800"
+                   HorizontalTextAlignment="Center"
+                   FontSize="20" FontAttributes="Bold"/>
+
+            <Label/>
+
+            <Label Text="Fecha de Adopcion"
+                   TextColor="#FF9800"
+                   FontSize="20" FontAttributes="Bold"/>
+
+            <DatePicker  x:Name="dpFecha" TextColor="#FF9800"/>
+
+            <Entry Placeholder="Descripcion"
+                       x:Name="lblDescripcion"
+                       PlaceholderColor="#FF9800"
+                       TextColor="#FF9800"
+                       FontAttributes="Bold" WidthRequest="300"
+                 />
+
+            <Button TextColor="White"
+                    BackgroundColor="#FF9800"
+                    Text="Solicitud"
+                    FontAttributes="Bold"
+                    FontSize="16"                   
+                    CornerRadius="16"               
+            />
+
+        </StackLayout>
+    </Grid>
+
+
+</ContentPage>

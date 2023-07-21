@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             x:Class="Pets.Validacion">
+
+    <ScrollView>
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="240"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+        <Image Source="https://i.ibb.co/LkCq57C/pngegg-1.png"/>
+
+        <StackLayout Grid.Row="1" Margin="20" Orientation="Vertical">
+
+            
+            <Label Grid.Row="1" Text="Validacion de Datos"
+                   TextColor="#FF9800"
+                   HorizontalTextAlignment="Center"
+                   FontSize="20" FontAttributes="Bold"/>
+
+            <Entry Placeholder="Nombres"
+                       x:Name="lblNombre"
+                       PlaceholderColor="#FF9800"
+                       TextColor="#FF9800"
+                       FontAttributes="Bold" WidthRequest="300"
+                 />
+
+            <Entry Placeholder="Apellidos"
+                       x:Name="lblApellido"
+                       PlaceholderColor="#FF9800"
+                       TextColor="#FF9800"
+                       FontAttributes="Bold" WidthRequest="300"
+                 />
+
+            <Entry Placeholder="Direccion"
+                       x:Name="lblUser"
+                       PlaceholderColor="#FF9800"
+                       TextColor="#FF9800"
+                       FontAttributes="Bold" WidthRequest="300"
+                 />
+
+            <Entry Placeholder="Telefono"
+                       x:Name="lbltelefono"
+                       PlaceholderColor="#FF9800"
+                       TextColor="#FF9800"
+                       FontAttributes="Bold" WidthRequest="300"
+                 />
+            <Entry Placeholder="Correo"
+                       x:Name="lblCorreo"
+                       PlaceholderColor="#FF9800"
+                       TextColor="#FF9800"
+                       FontAttributes="Bold" WidthRequest="300"
+                 />
+            <Image x:Name="MiImagen" ></Image>
+            <Button TextColor="White"
+                    BackgroundColor="#FF9800"
+                    Text="Subir Documento de Cedula"
+                    FontAttributes="Bold"
+                    FontSize="16"                   
+                    CornerRadius="16"
+                    Clicked="ButtonDoc_Clicked"
+               
+            />
+
+            <Button TextColor="White"
+                    BackgroundColor="#FF9800"
+                    Text="Validar Documentacion"
+                    FontAttributes="Bold"
+                    FontSize="16"                   
+                    CornerRadius="16"
+                    Clicked="ButtonVal_Clicked"
+               
+            />
+
+        </StackLayout>
+    </Grid>
+    </ScrollView>
+</ContentPage>
